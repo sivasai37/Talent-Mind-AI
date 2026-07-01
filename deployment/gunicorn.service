@@ -1,0 +1,28 @@
+# --- Systemd Service Configuration Sample for Gunicorn Backend daemon ---
+# Save this file to /etc/systemd/system/gunicorn.service
+
+[Unit]
+Description=Gunicorn Daemon for TalentMind AI Backend
+After=network.target
+
+[Service]
+User=ubuntu
+Group=www-data
+WorkingDirectory=/var/www/talent-mind/backend
+# Execute Gunicorn from the virtual environment
+ExecStart=/var/www/talent-mind/venv/bin/gunicorn \
+          --workers 3 \
+          --bind 127.0.0.1:8000 \
+          --timeout 120 \
+          core.wsgi:application
+# Read environment variables (.env file)
+EnvironmentFile=/var/www/talent-mind/backend/.env
+
+# Restart service if it crashes
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=gunicorn
+
+[Install]
+WantedBy=multi-user.target

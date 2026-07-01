@@ -1,0 +1,14 @@
+# TalentMind AI - Backend requirements
+# Flexible pins for broad Python compatibility (incl. 3.13)
+Django>=5.0,<5.2
+djangorestframework>=3.15
+django-cors-headers>=4.3
+numpy>=1.26
+scikit-learn>=1.4
+python-dotenv>=1.0
+requests>=2.31
+# Optional heavy ML deps (auto-detected at runtime; app works without them)
+# sentence-transformers>=2.7
+# faiss-cpu>=1.8
+# google-generativeai>=0.7
+# psycopg2-binary>=2.9  # enable for PostgreSQL

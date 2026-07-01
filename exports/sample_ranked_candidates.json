@@ -1,0 +1,294 @@
+{
+  "job_title": "Senior Python Backend Engineer",
+  "job_structure": {
+    "required_skills": [
+      "we",
+      "are",
+      "hiring",
+      "a",
+      "senior",
+      "python",
+      "backend",
+      "engineer"
+    ],
+    "preferred_skills": [],
+    "experience_years": "",
+    "education": "",
+    "industry": "",
+    "behavioral_traits": [],
+    "seniority": "senior"
+  },
+  "results": [
+    {
+      "candidate_id": 1,
+      "full_name": "Alice Johnson",
+      "semantic_score": 51.941126585006714,
+      "skill_score": 0.0,
+      "experience_score": 67.5,
+      "recruitability_score": 71.25,
+      "llm_score": 43.32,
+      "final_score": 43.32389430475235,
+      "strengths": [
+        "High recruitability signals",
+        "High recruiter engagement and availability."
+      ],
+      "weaknesses": [
+        "Skill gap vs required",
+        "Experience mismatch or insufficient years",
+        "Several required skills are missing or underdeveloped."
+      ],
+      "missing_skills": [
+        "we",
+        "are",
+        "hiring",
+        "a",
+        "senior",
+        "python",
+        "backend",
+        "engineer"
+      ],
+      "recruiter_ai": {
+        "llm_score": 43.32,
+        "recommendation": "Weak Fit",
+        "strengths": [
+          "High recruiter engagement and availability."
+        ],
+        "weaknesses": [
+          "Several required skills are missing or underdeveloped."
+        ],
+        "missing_skills": [
+          "we",
+          "are",
+          "hiring",
+          "a",
+          "senior",
+          "python",
+          "backend",
+          "engineer"
+        ],
+        "recruiter_summary": "Candidate Alice Johnson appears to be a weak fit for the role. Skill score is 0.0, experience is 67.5, recruitability is 71.2."
+      },
+      "skill_details": {
+        "matched": [],
+        "missing": [
+          "we",
+          "are",
+          "hiring",
+          "a",
+          "senior",
+          "python",
+          "backend",
+          "engineer"
+        ],
+        "base_match": 0.0,
+        "proficiency_avg": 0.0,
+        "endorsements_avg": 0.0,
+        "assessment_avg": 0.0
+      },
+      "experience_details": {
+        "years_score": 0.5,
+        "avg_tenure": 5.221081451060917,
+        "stability": 1.0,
+        "growth": true,
+        "leadership": true,
+        "industry_alignment": 0.0
+      },
+      "recruitability_details": {
+        "recruiter_response_rate": 0.85,
+        "interview_completion_rate": 0.9,
+        "offer_acceptance_rate": 0.8,
+        "profile_completeness": 0.95,
+        "open_to_work": 1.0,
+        "github_score": 0.0,
+        "search_score": 0.0,
+        "recruiter_saves_score": 0.0
+      },
+      "semantic_explanation": "Semantic similarity score 51.9 (higher indicates closer match to the job description).",
+      "skill_explanation": "Skill score 0.0 based on matching required skills.",
+      "experience_explanation": "Experience score 67.5.",
+      "behavioral_explanation": null,
+      "gemini_explanation": "Candidate Alice Johnson appears to be a weak fit for the role. Skill score is 0.0, experience is 67.5, recruitability is 71.2."
+    },
+    {
+      "candidate_id": 2,
+      "full_name": "Bob Smith",
+      "semantic_score": 73.33782911300659,
+      "skill_score": 0.0,
+      "experience_score": 37.5,
+      "recruitability_score": 50.5,
+      "llm_score": 43.19,
+      "final_score": 43.18724018955231,
+      "strengths": [
+        "Profile is semantically aligned with the job description."
+      ],
+      "weaknesses": [
+        "Skill gap vs required",
+        "Experience mismatch or insufficient years",
+        "Low recruitability signals",
+        "Several required skills are missing or underdeveloped.",
+        "May lack sufficient relevant experience."
+      ],
+      "missing_skills": [
+        "we",
+        "are",
+        "hiring",
+        "a",
+        "senior",
+        "python",
+        "backend",
+        "engineer"
+      ],
+      "recruiter_ai": {
+        "llm_score": 43.19,
+        "recommendation": "Weak Fit",
+        "strengths": [
+          "Profile is semantically aligned with the job description."
+        ],
+        "weaknesses": [
+          "Several required skills are missing or underdeveloped.",
+          "May lack sufficient relevant experience."
+        ],
+        "missing_skills": [
+          "we",
+          "are",
+          "hiring",
+          "a",
+          "senior",
+          "python",
+          "backend",
+          "engineer"
+        ],
+        "recruiter_summary": "Candidate Bob Smith appears to be a weak fit for the role. Skill score is 0.0, experience is 37.5, recruitability is 50.5."
+      },
+      "skill_details": {
+        "matched": [],
+        "missing": [
+          "we",
+          "are",
+          "hiring",
+          "a",
+          "senior",
+          "python",
+          "backend",
+          "engineer"
+        ],
+        "base_match": 0.0,
+        "proficiency_avg": 0.0,
+        "endorsements_avg": 0.0,
+        "assessment_avg": 0.0
+      },
+      "experience_details": {
+        "years_score": 0.5,
+        "avg_tenure": 8.030116358658454,
+        "stability": 1.0,
+        "growth": false,
+        "leadership": false,
+        "industry_alignment": 0.0
+      },
+      "recruitability_details": {
+        "recruiter_response_rate": 0.6,
+        "interview_completion_rate": 0.7,
+        "offer_acceptance_rate": 0.5,
+        "profile_completeness": 0.8,
+        "open_to_work": 0.5,
+        "github_score": 0.0,
+        "search_score": 0.0,
+        "recruiter_saves_score": 0.0
+      },
+      "semantic_explanation": "Semantic similarity score 73.3 (higher indicates closer match to the job description).",
+      "skill_explanation": "Skill score 0.0 based on matching required skills.",
+      "experience_explanation": "Experience score 37.5.",
+      "behavioral_explanation": null,
+      "gemini_explanation": "Candidate Bob Smith appears to be a weak fit for the role. Skill score is 0.0, experience is 37.5, recruitability is 50.5."
+    },
+    {
+      "candidate_id": 3,
+      "full_name": "Carol Lee",
+      "semantic_score": 36.19944155216217,
+      "skill_score": 0.0,
+      "experience_score": 30.0,
+      "recruitability_score": 66.0,
+      "llm_score": 30.08,
+      "final_score": 30.077804543256757,
+      "strengths": [
+        "High recruitability signals"
+      ],
+      "weaknesses": [
+        "Skill gap vs required",
+        "Experience mismatch or insufficient years",
+        "Several required skills are missing or underdeveloped.",
+        "May lack sufficient relevant experience."
+      ],
+      "missing_skills": [
+        "we",
+        "are",
+        "hiring",
+        "a",
+        "senior",
+        "python",
+        "backend",
+        "engineer"
+      ],
+      "recruiter_ai": {
+        "llm_score": 30.08,
+        "recommendation": "Weak Fit",
+        "strengths": [],
+        "weaknesses": [
+          "Several required skills are missing or underdeveloped.",
+          "May lack sufficient relevant experience."
+        ],
+        "missing_skills": [
+          "we",
+          "are",
+          "hiring",
+          "a",
+          "senior",
+          "python",
+          "backend",
+          "engineer"
+        ],
+        "recruiter_summary": "Candidate Carol Lee appears to be a weak fit for the role. Skill score is 0.0, experience is 30.0, recruitability is 66.0."
+      },
+      "skill_details": {
+        "matched": [],
+        "missing": [
+          "we",
+          "are",
+          "hiring",
+          "a",
+          "senior",
+          "python",
+          "backend",
+          "engineer"
+        ],
+        "base_match": 0.0,
+        "proficiency_avg": 0.0,
+        "endorsements_avg": 0.0,
+        "assessment_avg": 0.0
+      },
+      "experience_details": {
+        "years_score": 0.5,
+        "avg_tenure": 0.0,
+        "stability": 0.5,
+        "growth": false,
+        "leadership": false,
+        "industry_alignment": 0.0
+      },
+      "recruitability_details": {
+        "recruiter_response_rate": 0.75,
+        "interview_completion_rate": 0.85,
+        "offer_acceptance_rate": 0.7,
+        "profile_completeness": 0.9,
+        "open_to_work": 1.0,
+        "github_score": 0.0,
+        "search_score": 0.0,
+        "recruiter_saves_score": 0.0
+      },
+      "semantic_explanation": "Semantic similarity score 36.2 (higher indicates closer match to the job description).",
+      "skill_explanation": "Skill score 0.0 based on matching required skills.",
+      "experience_explanation": "Experience score 30.0.",
+      "behavioral_explanation": null,
+      "gemini_explanation": "Candidate Carol Lee appears to be a weak fit for the role. Skill score is 0.0, experience is 30.0, recruitability is 66.0."
+    }
+  ]
+}
