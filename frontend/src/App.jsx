@@ -86,7 +86,7 @@ function Sidebar({ activeView, onNavigate }) {
   );
 }
 
-function Topbar({ activeView, latestJobId, rankingCount, stats }) {
+function Topbar({ activeView, latestJobId, rankingCount, stats, theme, onToggleTheme }) {
   const titles = {
     overview: { title: 'Executive Overview', subtitle: 'Hiring intelligence at a glance' },
     rank: { title: 'Rank Candidates', subtitle: 'AI-powered multi-agent evaluation' },
@@ -129,6 +129,15 @@ function Topbar({ activeView, latestJobId, rankingCount, stats }) {
             📄 Submission CSV
           </a>
         )}
+        <button
+          onClick={onToggleTheme}
+          className="btn btn-secondary btn-sm"
+          style={{ fontSize: '14px', width: '36px', height: '36px', padding: 0 }}
+          id="theme-toggle-btn"
+          title={theme === 'dark' ? 'Switch to Light Theme' : 'Switch to Dark Theme'}
+        >
+          {theme === 'dark' ? '☀️' : '🌙'}
+        </button>
       </div>
     </div>
   );
@@ -329,6 +338,20 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
+  // Theme state
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem('theme') || 'dark';
+  });
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(prev => prev === 'dark' ? 'light' : 'dark');
+  };
+
   const topCandidate = useMemo(() => rankings[0] || null, [rankings]);
   const selectedCandidate = selected || topCandidate;
 
@@ -445,6 +468,8 @@ function App() {
           latestJobId={latestJobId}
           rankingCount={rankings.length}
           stats={stats}
+          theme={theme}
+          onToggleTheme={toggleTheme}
         />
 
         <div className="page-content">

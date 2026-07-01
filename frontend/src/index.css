@@ -62,6 +62,46 @@
   --transition-slow: 400ms ease;
 }
 
+/* ==========================================
+   LIGHT THEME OVERRIDES
+   ========================================== */
+[data-theme='light'] {
+  /* Backgrounds */
+  --bg-base: #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-elevated: #f1f5f9;
+  --bg-card: #ffffff;
+  --bg-hover: #e2e8f0;
+
+  /* Text Colors */
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --text-accent: #4f46e5;
+
+  /* Borders */
+  --border-subtle: rgba(99, 102, 241, 0.08);
+  --border-default: rgba(99, 102, 241, 0.15);
+  --border-strong: rgba(99, 102, 241, 0.3);
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --shadow-glow: 0 0 15px rgba(99, 102, 241, 0.12);
+  --shadow-glow-success: 0 0 15px rgba(16, 185, 129, 0.12);
+}
+
+[data-theme='light'] .card-glass {
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: var(--shadow-md);
+}
+
+[data-theme='light'] ::-webkit-scrollbar-track {
+  background: var(--bg-elevated);
+}
+
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;

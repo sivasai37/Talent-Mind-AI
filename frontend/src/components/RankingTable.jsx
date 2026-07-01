@@ -43,7 +43,7 @@ function ScoreBar({ value, color = '#6366f1' }) {
   const pct = Math.min(100, Math.max(0, value || 0));
   return (
     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-      <div style={{ flex: 1, height: '4px', background: 'rgba(255,255,255,0.06)', borderRadius: '999px', overflow: 'hidden' }}>
+      <div style={{ flex: 1, height: '4px', background: 'var(--border-subtle)', borderRadius: '999px', overflow: 'hidden' }}>
         <div style={{
           height: '100%', width: `${pct}%`,
           background: color, borderRadius: '999px',
