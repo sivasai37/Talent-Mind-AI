@@ -113,29 +113,38 @@ def copy_sample_outputs():
         writer = csv.writer(fh)
         writer.writerow([
             "candidate_id",
-            "full_name",
-            "semantic_score",
-            "skill_score",
-            "experience_score",
-            "recruitability_score",
-            "llm_score",
-            "final_score",
-            "recommendation",
+            "rank",
+            "score",
+            "reasoning",
         ])
         sample_json = EXPORTS_DIR / "sample_ranked_candidates.json"
         with sample_json.open("r", encoding="utf-8") as source_f:
             data = json.load(source_f)
-        for item in data.get("results", [])[:5]:
+        
+        results = data.get("results", [])
+        final_scores = [item.get("final_score", 0) for item in results]
+        max_score = max(final_scores) if final_scores else 1.0
+        min_score = min(final_scores) if final_scores else 0.0
+        
+        for index, item in enumerate(results[:5]):
+            raw_score = item.get("final_score", 0)
+            if max_score == min_score:
+                norm_score = 1.0
+            else:
+                norm_score = (raw_score - min_score) / (max_score - min_score)
+            
+            cand_id = item.get("candidate_id", 0)
+            cand_id_str = f"CAND_{int(cand_id):07d}"
+            
+            reasoning = item.get("gemini_explanation") or item.get("why_selected") or ""
+            if not reasoning:
+                reasoning = f"Candidate appears to be a fit for the role. Score is {raw_score:.1f}."
+                
             writer.writerow([
-                item.get("candidate_id"),
-                item.get("full_name"),
-                item.get("semantic_score"),
-                item.get("skill_score"),
-                item.get("experience_score"),
-                item.get("recruitability_score"),
-                item.get("llm_score"),
-                item.get("final_score"),
-                item.get("recruiter_ai", {}).get("recommendation", ""),
+                cand_id_str,
+                index + 1,
+                f"{norm_score:.3f}",
+                reasoning,
             ])
     print(f"Wrote sample ranked output CSV to {sample_csv}")
     return sample_csv

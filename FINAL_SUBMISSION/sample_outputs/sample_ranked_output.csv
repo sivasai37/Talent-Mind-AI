@@ -1,4 +1,4 @@
-candidate_id,full_name,semantic_score,skill_score,experience_score,recruitability_score,llm_score,final_score,recommendation
-1,Alice Johnson,51.941126585006714,0.0,67.5,71.25,43.32,43.32389430475235,Weak Fit
-2,Bob Smith,73.33782911300659,0.0,37.5,50.5,43.19,43.18724018955231,Weak Fit
-3,Carol Lee,36.19944155216217,0.0,30.0,66.0,30.08,30.077804543256757,Weak Fit
+candidate_id,rank,score,reasoning
+CAND_0000001,1,1.000,"Candidate Alice Johnson appears to be a weak fit for the role. Skill score is 0.0, experience is 67.5, recruitability is 71.2."
+CAND_0000002,2,0.990,"Candidate Bob Smith appears to be a weak fit for the role. Skill score is 0.0, experience is 37.5, recruitability is 50.5."
+CAND_0000003,3,0.000,"Candidate Carol Lee appears to be a weak fit for the role. Skill score is 0.0, experience is 30.0, recruitability is 66.0."
